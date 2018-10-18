@@ -44,13 +44,13 @@
 } */
 
 .navbar{
-     background-color: #009999;
+     background-color: #3b5998;
      
      
     position:sticky;
 }
 .table .thead-dark th {
-    color: rgb(8, 7, 7);
-    background-color:  #99ffff;
+    color:white;
+    background-color:  #3b5998;
     border-color: white;
 }
