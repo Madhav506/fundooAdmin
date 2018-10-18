@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
 
+
 import 'datatables.net'
 @Component({
   selector: 'app-admindashboard',
@@ -73,10 +74,10 @@ export class AdmindashboardComponent implements OnInit {
           var html='';
           for(let index=0;index<arr.length;index++)
           {
-            html+="<div class='card col-sm-4 mx-auto'>";
-            html+="<div class='card-header'>"+arr[index].service+"</div>";
-            html+="<div class='card-body'>"+arr[index].count+"</div>";
-            html+="</div";
+            html+="<div class='card col-sm-3 text-center  mt-4  ml-auto mr-auto'  style='background-color:#b3ffff;font-family:cursive;font-size:15px;font-weight:bold' >";
+            html+="<div class='card-header' style='background-color: white'>"+arr[index].service+"</div>";
+            html+="<div class='card-body'  style='' >"+arr[index].count+"</div>";
+            html+="</div>";
             $("#service").html(html);
 
           }
