@@ -19,10 +19,10 @@ export class AdminloginComponent implements OnInit {
   constructor() { }
   /**ngonInit is life cycle hook ngOnInit() called by Angular to indicate that angualar done with intialization */
   ngOnInit() {
-    var token;
-    if (localStorage.getItem('token')) {
-      window.location.href = "/dashboard";
-    }
+    // var token;
+    // if (localStorage.getItem('token')) {
+    //   window.location.href = "/dashboard";
+    // }
     /**calling jQuery's $ function, passing to it the document object */
     /** ready event occurs when the DOM loaded */
     $(document).ready(function () {
@@ -65,7 +65,7 @@ export class AdminloginComponent implements OnInit {
               console.log(response)
               localStorage.setItem('token', response.id)
 
-              window.location.href = "/dashboard";
+              $(location).attr('href','/dashboard');
               return false;
             }
 

@@ -4,12 +4,13 @@ import { AdminloginComponent } from './components/adminlogin/adminlogin.componen
 import { AdmindashboardComponent } from './components/admindashboard/admindashboard.component';
 
 import {AuthguardGuard  as AuthGuard } from '../app/auth/authguard.guard';
+import { QuestionAnswerApproveComponent } from './components/question-answer-approve/question-answer-approve.component';
 
 
 const routes: Routes = [
   { path: 'login', component: AdminloginComponent },
-
-  { path: 'dashboard', component: AdmindashboardComponent,canActivate: [AuthGuard] },
+  { path: 'dashboard', component: AdmindashboardComponent },
+  { path: 'QuestionAnswer', component: QuestionAnswerApproveComponent,canActivate: [AuthGuard] },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 ];
 

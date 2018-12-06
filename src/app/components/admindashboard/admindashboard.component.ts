@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 /**$ is shorthand in jQuery for window.jQuery */
 import * as $ from "jquery";
 import 'datatables.net'
+import { Router } from '@angular/router';
 /** @Component decorator identifies the class below it as a component class, and specifies its metadata. */
 @Component({
   /**Selector used to create instance and insert this component where it finds corresponding html template */
@@ -17,7 +18,7 @@ import 'datatables.net'
 })
 export class AdmindashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
   /**ngonInit is life cycle hook ngOnInit() called by Angular to indicate that angualar done with intialization */
   ngOnInit() {
 
@@ -128,7 +129,9 @@ export class AdmindashboardComponent implements OnInit {
           success: function () {
             console.log("successfull");
             localStorage.removeItem('token');
-            window.location.href = "/login"
+            // window.location.href = "/login"
+            $(location).attr('href','/login');
+
           }
 
         })
@@ -140,13 +143,13 @@ export class AdmindashboardComponent implements OnInit {
 
 
 
+    $("#question").click(function(){
+      $(location).attr('href','QuestionAnswer');
+    });
+  
+  
   }
 
-
-
-
-
-
-
+  
 
 }
