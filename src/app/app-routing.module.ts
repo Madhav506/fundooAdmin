@@ -5,11 +5,13 @@ import { AdmindashboardComponent } from './components/admindashboard/admindashbo
 
 import {AuthguardGuard  as AuthGuard } from '../app/auth/authguard.guard';
 import { QuestionAnswerApproveComponent } from './components/question-answer-approve/question-answer-approve.component';
+import { OrderproductComponent } from './components/orderproduct/orderproduct.component';
 
 
 const routes: Routes = [
   { path: 'login', component: AdminloginComponent },
   { path: 'dashboard', component: AdmindashboardComponent },
+  { path: 'cart', component: OrderproductComponent },
   { path: 'QuestionAnswer', component: QuestionAnswerApproveComponent,canActivate: [AuthGuard] },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 ];

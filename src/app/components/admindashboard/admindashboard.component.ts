@@ -140,11 +140,11 @@ export class AdmindashboardComponent implements OnInit {
 
     });
 
-
-
-
     $("#question").click(function(){
       $(location).attr('href','QuestionAnswer');
+    });
+    $("#product").click(function(){
+      $(location).attr('href','cart');
     });
   
   

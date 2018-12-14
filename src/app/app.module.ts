@@ -8,6 +8,7 @@ import { AuthService } from './services/auth.service';
 import { AuthguardGuard } from './auth/authguard.guard';
 import { QuestionAnswerApproveComponent } from './components/question-answer-approve/question-answer-approve.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { OrderproductComponent } from './components/orderproduct/orderproduct.component';
 // import { MatSnackBar } from '@angular/material';
 // import {MaterialModule} from '@angular/material';
 
@@ -21,6 +22,7 @@ import { LoaderComponent } from './components/loader/loader.component';
     AdmindashboardComponent,
     QuestionAnswerApproveComponent,
     LoaderComponent,
+    OrderproductComponent,
    
   ],
   imports: [

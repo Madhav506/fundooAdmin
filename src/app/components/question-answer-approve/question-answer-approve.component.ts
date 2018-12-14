@@ -114,8 +114,8 @@ export class QuestionAnswerApproveComponent implements OnInit {
 
     var RowIndex = $(this).closest('tr');
     var data = questionArray1.row(RowIndex).data();
-    console.log('questioniduyhj',data);
-    console.log('questionid...',questionId[0].id);
+    // console.log('questioniduyhj',data);
+    // console.log('questionid...',questionId[0].id);
 
     for (var i = 0; i < questionId.length; i++) {
    if(data[1] == questionId[i].message){
